@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include_title_bar"
+        layout="@layout/base_title_bar" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/base_blue_2196F3" />
+
+        <com.lq.baselibrary.view.tablayout.TTabLayout
+            android:id="@+id/tab_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            app:base_iconHeight="23dp"
+            app:base_iconWidth="23dp"
+            app:base_indicator_color="#2C97DE"
+            app:base_indicator_height="2dp"
+            app:base_textSelectColor="#2C97DE"
+            app:base_textUnSelectColor="#66000000"
+            app:base_titlesize="12sp"
+            app:base_underline_color="#22DDDDDD"
+            app:base_underline_height="3dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

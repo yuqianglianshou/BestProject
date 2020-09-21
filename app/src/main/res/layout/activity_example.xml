@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_paleturquoise"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include_title_bar"
+        layout="@layout/base_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_picture_friend" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/base_dp_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dp_10"
+                    android:background="@drawable/shape_round_blue_tr_3dp"
+                    android:text="view动画"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+
+                    android:background="@color/base_blue_2196F3"
+                    android:text="jetpack"
+                    android:textColor="@color/base_white"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="recycleview"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="危险权限组"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="app列表"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="demo"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="toast"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="dialog"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="背景移动"
+                    android:textColor="@color/base_white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>
