@@ -7,4 +7,14 @@
         <item name="colorAccent">@color/base_colorAccent</item>
     </style>
 
+    <style name="base_SpinKitView.CubeGrid">
+        <item name="base_SpinKit_Style">CubeGrid</item>
+    </style>
+    <style name="base_SpinKitView">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
 </resources>

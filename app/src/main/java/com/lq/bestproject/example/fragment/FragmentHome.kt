@@ -1,4 +1,4 @@
-package com.lq.baseproject.example.fragment
+package com.lq.baselibrary.example.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

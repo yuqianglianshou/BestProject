@@ -1,4 +1,4 @@
-package com.lq.baseproject.example.adapter
+package com.lq.baselibrary.example.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

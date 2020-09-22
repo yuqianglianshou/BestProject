@@ -42,6 +42,7 @@
         <activity android:name=".example.activity.AppListActivity"/>
         <activity android:name=".example.activity.PermissionActivity"/>
         <activity android:name=".example.activity.AutoImageViewActivity"/>
+        <activity android:name=".example.activity.DialogActivity"/>
     </application>
 
 </manifest>

@@ -1,10 +1,10 @@
-package com.lq.baseproject.example.fragment
+package com.lq.baselibrary.example.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.lq.baseproject.example.adapter.AdapterFVP
+import com.lq.baselibrary.example.adapter.AdapterFVP
 import com.lq.bestproject.R
 import com.lq.bestproject.example.bean.ModelFVP
 import kotlinx.android.synthetic.main.fragment_home_type.*

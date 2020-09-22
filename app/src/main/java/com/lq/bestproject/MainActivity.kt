@@ -5,11 +5,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.lq.baselibrary.BaseActivity
+import com.lq.baselibrary.example.adapter.AdapterFVP
+import com.lq.baselibrary.example.fragment.FragmentHomeType
+import com.lq.baselibrary.example.fragment.FragmentPlaceholder
 import com.lq.baselibrary.view.tablayout.listener.OnTabSelectListener
 import com.lq.baselibrary.view.tablayout.listener.TabLayoutModel
-import com.lq.baseproject.example.adapter.AdapterFVP
-import com.lq.baseproject.example.fragment.FragmentHomeType
-import com.lq.baseproject.example.fragment.FragmentPlaceholder
 import com.lq.bestproject.example.bean.ModelFVP
 import com.lq.bestproject.example.bean.ModelTab
 import kotlinx.android.synthetic.main.activity_main.*

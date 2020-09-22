@@ -27,7 +27,6 @@ abstract class BaseActivity : AppCompatActivity() {
         initWindow()
         setContentView(initContentView())
 
-
         initUI()
         initData()
     }

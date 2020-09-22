@@ -5,10 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.lq.baselibrary.BaseActivity
 import com.lq.bestproject.R
-import com.lq.bestproject.example.activity.AppListActivity
-import com.lq.bestproject.example.activity.AutoImageViewActivity
-import com.lq.bestproject.example.activity.PermissionActivity
-import com.lq.bestproject.example.activity.ViewAnimationActivity
+import com.lq.bestproject.example.activity.*
 import kotlinx.android.synthetic.main.activity_example.*
 
 
@@ -35,6 +32,7 @@ class ExampleActivity : BaseActivity() {
         button4.setOnClickListener(View.OnClickListener { startAc(PermissionActivity::class.java) })
         button5.setOnClickListener(View.OnClickListener { startAc(AppListActivity::class.java) })
         button6.setOnClickListener(View.OnClickListener { startAc(DemoActivity::class.java) })
+        button8.setOnClickListener(View.OnClickListener { startAc(DialogActivity::class.java) })
         button9.setOnClickListener(View.OnClickListener { startAc(AutoImageViewActivity::class.java) })
 
     }

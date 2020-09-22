@@ -3,17 +3,14 @@ package com.lq.bestproject.example.activity
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.util.Log
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.listener.OnItemClickListener
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.lq.baselibrary.BaseActivity
+import com.lq.baselibrary.view.dialog.RxDialogShapeLoading
 import com.lq.bestproject.R
-import com.lq.bestproject.example.DemoActivity
 import com.lq.bestproject.example.animater.CustomAnimation2
 import com.lq.bestproject.example.bean.AppInfoBean
 import com.lq.bestproject.example.view.divider.DividerItemDecoration
@@ -40,13 +37,18 @@ class AppListActivity : BaseActivity() {
     }
 
     override fun initUI() {
-        findViewById<ImageView>(R.id.iv_back_base).setOnClickListener(View.OnClickListener { onBackPressed() })
+        findViewById<ImageView>(R.id.iv_back_base).setOnClickListener { onBackPressed() }
         findViewById<TextView>(R.id.tv_title_base).text = "安装应用列表"
 
         rv_applist.setHasFixedSize(true)
         rv_applist.layoutManager = LinearLayoutManager(mActivity)
         //分割线
-        rv_applist.addItemDecoration(DividerItemDecoration(mActivity,DividerItemDecoration.VERTICAL))
+        rv_applist.addItemDecoration(
+            DividerItemDecoration(
+                mActivity,
+                DividerItemDecoration.VERTICAL
+            )
+        )
 
         adapter =
             object : BaseQuickAdapter<AppInfoBean, BaseViewHolder>(
@@ -88,11 +90,13 @@ class AppListActivity : BaseActivity() {
 
     }
 
+    lateinit var rxDialogShapeLoading: RxDialogShapeLoading
     override fun initData() {
-
-        Thread(Runnable {
+        rxDialogShapeLoading = RxDialogShapeLoading(mActivity)
+        rxDialogShapeLoading.show()
+        Thread {
             load()
-        }).start()
+        }.start()
     }
 
     fun load() {
@@ -117,6 +121,8 @@ class AppListActivity : BaseActivity() {
             }
         }
         runOnUiThread(Runnable {
+            rxDialogShapeLoading.cancel()
+
             adapter?.notifyDataSetChanged()
             textView2.setText("共有 " + listData?.size + " 个非系统应用");
         })

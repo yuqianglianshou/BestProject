@@ -29,7 +29,7 @@
         android:textColor="@color/base_white"
         android:textSize="@dimen/base_sp_18"
         android:textStyle="bold"
-        tools:text="@string/app_name" />
+        tools:text="@string/base_app_name" />
 
     <TextView
         android:id="@+id/tv_right_base"

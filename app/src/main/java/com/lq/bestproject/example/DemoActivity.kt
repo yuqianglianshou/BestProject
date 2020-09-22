@@ -1,6 +1,5 @@
 package com.lq.bestproject.example
 
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import com.lq.baselibrary.BaseActivity
@@ -21,7 +20,7 @@ class DemoActivity : BaseActivity() {
     }
 
     override fun initUI() {
-        findViewById<ImageView>(R.id.iv_back_base).setOnClickListener(View.OnClickListener { onBackPressed() })
+        findViewById<ImageView>(R.id.iv_back_base).setOnClickListener { onBackPressed() }
         findViewById<TextView>(R.id.tv_title_base).text = "Demo"
     }
 
