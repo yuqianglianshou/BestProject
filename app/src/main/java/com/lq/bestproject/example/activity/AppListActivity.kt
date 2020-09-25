@@ -36,6 +36,7 @@ class AppListActivity : BaseActivity() {
         return R.layout.activity_app_list
     }
 
+
     override fun initUI() {
         findViewById<ImageView>(R.id.iv_back_base).setOnClickListener { onBackPressed() }
         findViewById<TextView>(R.id.tv_title_base).text = "安装应用列表"
@@ -94,19 +95,22 @@ class AppListActivity : BaseActivity() {
     override fun initData() {
         rxDialogShapeLoading = RxDialogShapeLoading(mActivity)
         rxDialogShapeLoading.show()
+
+
         Thread {
-            load()
+            loadAppInfo()
         }.start()
+
+
     }
 
-    fun load() {
+    fun loadAppInfo() {
         var mpm: PackageManager = mActivity.packageManager
         val list: MutableList<ApplicationInfo> =
             mpm.getInstalledApplications(0)
 
         // 排序
         Collections.sort(list, ApplicationInfo.DisplayNameComparator(mpm))
-
 
         for (item in list) {
             // 非系统应用
@@ -120,11 +124,11 @@ class AppListActivity : BaseActivity() {
                 )
             }
         }
-        runOnUiThread(Runnable {
+        runOnUiThread {
             rxDialogShapeLoading.cancel()
 
             adapter?.notifyDataSetChanged()
             textView2.setText("共有 " + listData?.size + " 个非系统应用");
-        })
+        }
     }
 }

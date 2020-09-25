@@ -4,7 +4,7 @@ import com.lq.baselibrary.BaseActivity
 import com.lq.bestproject.R
 
 /**
- * @author tamsiree
+ * view 移动动画
  */
 class AutoImageViewActivity : BaseActivity() {
 

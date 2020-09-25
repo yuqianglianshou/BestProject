@@ -64,7 +64,9 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    
+    //jetpack
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
     //recyclerview
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
@@ -76,5 +78,9 @@ dependencies {
     //    recyclerview 工具
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
 
+    //网页查看 数据 (Logcat中有地址，打不开命令行运行 adb forward tcp:8080 tcp:8080)
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 
+    //有问题
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.4'
 }

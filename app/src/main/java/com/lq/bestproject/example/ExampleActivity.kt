@@ -1,6 +1,5 @@
 package com.lq.bestproject.example
 
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import com.lq.baselibrary.BaseActivity
@@ -23,17 +22,20 @@ class ExampleActivity : BaseActivity() {
     }
 
     override fun initUI() {
-        findViewById<ImageView>(R.id.iv_back_base).setOnClickListener(View.OnClickListener { onBackPressed() })
+        findViewById<ImageView>(R.id.iv_back_base).setOnClickListener { onBackPressed() }
         findViewById<TextView>(R.id.tv_title_base).text = "样例"
     }
 
     override fun initData() {
-        button.setOnClickListener(View.OnClickListener { startAc(ViewAnimationActivity::class.java) })
-        button4.setOnClickListener(View.OnClickListener { startAc(PermissionActivity::class.java) })
-        button5.setOnClickListener(View.OnClickListener { startAc(AppListActivity::class.java) })
-        button6.setOnClickListener(View.OnClickListener { startAc(DemoActivity::class.java) })
-        button8.setOnClickListener(View.OnClickListener { startAc(DialogActivity::class.java) })
-        button9.setOnClickListener(View.OnClickListener { startAc(AutoImageViewActivity::class.java) })
+        button.setOnClickListener { startAc(ViewAnimationActivity::class.java) }
+        button2.setOnClickListener { startAc(JetpackActivity::class.java) }
+        button3.setOnClickListener { startAc(RecyclerViewActivity::class.java) }
+        button4.setOnClickListener { startAc(PermissionActivity::class.java) }
+        button5.setOnClickListener { startAc(AppListActivity::class.java) }
+        button6.setOnClickListener { startAc(DemoActivity::class.java) }
+        button7.setOnClickListener { startAc(ToastActivity::class.java) }
+        button8.setOnClickListener { startAc(DialogActivity::class.java) }
+        button9.setOnClickListener { startAc(AutoImageViewActivity::class.java) }
 
     }
 

@@ -4,6 +4,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.lq.baselibrary.BaseActivity
 import com.lq.bestproject.R
+import com.lq.bestproject.example.activity.ToastActivity
+import kotlinx.android.synthetic.main.activity_demo.*
 
 
 /**
@@ -25,7 +27,9 @@ class DemoActivity : BaseActivity() {
     }
 
     override fun initData() {
-
+        btn.setOnClickListener {
+            startAc(ToastActivity::class.java)
+        }
     }
 
 }

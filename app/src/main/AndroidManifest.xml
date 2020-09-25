@@ -24,18 +24,20 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".BApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher2"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/base_AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".example.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".example.ExampleActivity"/>
         <activity android:name=".example.DemoActivity"/>
         <activity android:name=".example.activity.ViewAnimationActivity"/>
@@ -43,6 +45,9 @@
         <activity android:name=".example.activity.PermissionActivity"/>
         <activity android:name=".example.activity.AutoImageViewActivity"/>
         <activity android:name=".example.activity.DialogActivity"/>
+        <activity android:name=".example.activity.RecyclerViewActivity"/>
+        <activity android:name=".example.activity.ToastActivity"/>
+        <activity android:name=".example.activity.JetpackActivity"/>
     </application>
 
 </manifest>
