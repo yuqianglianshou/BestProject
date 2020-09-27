@@ -36,6 +36,8 @@ class ExampleActivity : BaseActivity() {
         button7.setOnClickListener { startAc(ToastActivity::class.java) }
         button8.setOnClickListener { startAc(DialogActivity::class.java) }
         button9.setOnClickListener { startAc(AutoImageViewActivity::class.java) }
+        button10.setOnClickListener { startAc(NestedScrollViewActivity::class.java) }
+        button11.setOnClickListener { startAc(LoginActivity::class.java) }
 
     }
 

@@ -37,17 +37,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".example.ExampleActivity"/>
-        <activity android:name=".example.DemoActivity"/>
-        <activity android:name=".example.activity.ViewAnimationActivity"/>
-        <activity android:name=".example.activity.AppListActivity"/>
-        <activity android:name=".example.activity.PermissionActivity"/>
-        <activity android:name=".example.activity.AutoImageViewActivity"/>
-        <activity android:name=".example.activity.DialogActivity"/>
-        <activity android:name=".example.activity.RecyclerViewActivity"/>
-        <activity android:name=".example.activity.ToastActivity"/>
-        <activity android:name=".example.activity.JetpackActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".example.ExampleActivity" />
+        <activity android:name=".example.DemoActivity" />
+        <activity android:name=".example.activity.ViewAnimationActivity" />
+        <activity android:name=".example.activity.AppListActivity" />
+        <activity android:name=".example.activity.PermissionActivity" />
+        <activity android:name=".example.activity.AutoImageViewActivity" />
+        <activity android:name=".example.activity.DialogActivity" />
+        <activity android:name=".example.activity.RecyclerViewActivity" />
+        <activity android:name=".example.activity.ToastActivity" />
+        <activity android:name=".example.activity.JetpackActivity" />
+        <activity android:name=".example.activity.NestedScrollViewActivity" />
+        <activity android:name=".example.activity.LoginActivity" />
     </application>
 
 </manifest>
