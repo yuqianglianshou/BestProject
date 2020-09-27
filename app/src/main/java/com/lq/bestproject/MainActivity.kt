@@ -1,6 +1,7 @@
 package com.lq.bestproject
 
 import android.view.View
+import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
@@ -17,6 +18,11 @@ import java.util.*
 
 class MainActivity : BaseActivity() {
 
+    override fun initWindow() {
+        super.initWindow()
+        //防止键盘顶起tablayout
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+    }
     override fun initContentView(): Int {
         return R.layout.activity_main
     }

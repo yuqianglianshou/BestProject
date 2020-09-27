@@ -16,6 +16,23 @@
         android:textAllCaps="false"
         android:textColor="@color/base_white" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="@dimen/base_dp_10"
+        android:layout_marginTop="@dimen/base_dp_20"
+        android:layout_marginRight="@dimen/base_dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/app_name"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <include layout="@layout/load_data_empty" />
 
 </LinearLayout>
