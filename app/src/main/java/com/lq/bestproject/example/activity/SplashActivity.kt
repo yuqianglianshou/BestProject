@@ -9,6 +9,7 @@ import com.lq.baselibrary.util.DeviceTool
 import com.lq.baselibrary.util.SPTool
 import com.lq.bestproject.MainActivity
 import com.lq.bestproject.R
+import com.lq.bestproject.example.ExampleActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 
@@ -30,13 +31,12 @@ class SplashActivity : BaseActivity() {
     }
 
     override fun initData() {
-        SPTool.putBoolean(mActivity,"key",false)
-        SPTool.putBoolean(mActivity,"key2",false)
     }
 
     override fun onResume() {
         super.onResume()
         startAnimation(rl_splash)
+
     }
 
     fun startAnimation(view: View) {
@@ -47,7 +47,7 @@ class SplashActivity : BaseActivity() {
             }
 
             override fun onAnimationEnd(animation: Animation?) {
-                startAc(MainActivity::class.java)
+                startAc(ExampleActivity::class.java)
                 finish()
             }
 
@@ -57,5 +57,6 @@ class SplashActivity : BaseActivity() {
         })
 
         view.startAnimation(animation)
+
     }
 }

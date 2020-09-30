@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/base_paleturquoise"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <include
         android:id="@+id/include_title_bar"
@@ -30,6 +29,7 @@
 
 
             <LinearLayout
+                android:paddingBottom="@dimen/base_dp_60"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/base_dp_10"
@@ -138,6 +138,23 @@
                     android:layout_margin="@dimen/base_dp_10"
                     android:background="@color/base_blue_2196F3"
                     android:text="标准登录界面"
+                    android:textColor="@color/base_white" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="excel读取"
+                    android:textColor="@color/base_white" />
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/base_dp_10"
+                    android:background="@color/base_blue_2196F3"
+                    android:text="main"
                     android:textColor="@color/base_white" />
             </LinearLayout>
 

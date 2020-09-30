@@ -3,6 +3,7 @@ package com.lq.bestproject.example
 import android.widget.ImageView
 import android.widget.TextView
 import com.lq.baselibrary.BaseActivity
+import com.lq.bestproject.MainActivity
 import com.lq.bestproject.R
 import com.lq.bestproject.example.activity.*
 import kotlinx.android.synthetic.main.activity_example.*
@@ -38,6 +39,8 @@ class ExampleActivity : BaseActivity() {
         button9.setOnClickListener { startAc(AutoImageViewActivity::class.java) }
         button10.setOnClickListener { startAc(NestedScrollViewActivity::class.java) }
         button11.setOnClickListener { startAc(LoginActivity::class.java) }
+        button12.setOnClickListener { startAc(ExcelActivity::class.java) }
+        button13.setOnClickListener { startAc(MainActivity::class.java) }
 
     }
 

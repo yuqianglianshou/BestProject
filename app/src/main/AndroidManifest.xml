@@ -50,6 +50,7 @@
         <activity android:name=".example.activity.JetpackActivity" />
         <activity android:name=".example.activity.NestedScrollViewActivity" />
         <activity android:name=".example.activity.LoginActivity" />
+        <activity android:name=".example.activity.ExcelActivity" />
     </application>
 
 </manifest>
