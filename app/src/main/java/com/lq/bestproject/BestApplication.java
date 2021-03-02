@@ -5,17 +5,17 @@ import android.app.Application;
 /**
  * lq
  */
-public class BApplication extends Application {
+public class BestApplication extends Application {
 
-    private static BApplication app;
+    private static BestApplication app;
 
-    public BApplication() {
+    public BestApplication() {
         app = this;
     }
 
-    public static synchronized BApplication getInstance() {
+    public static synchronized BestApplication getInstance() {
         if (app == null) {
-            app = new BApplication();
+            app = new BestApplication();
         }
         return app;
     }

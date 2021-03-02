@@ -41,6 +41,7 @@ class ExampleActivity : BaseActivity() {
         button11.setOnClickListener { startAc(LoginActivity::class.java) }
         button12.setOnClickListener { startAc(ExcelActivity::class.java) }
         button13.setOnClickListener { startAc(MainActivity::class.java) }
+        button14.setOnClickListener { startAc(WebviewActivity::class.java) }
 
     }
 

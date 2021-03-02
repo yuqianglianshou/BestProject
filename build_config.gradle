@@ -4,7 +4,7 @@ ext {
             compileSdkVersion: 30,
             buildToolsVersion: "30.0.1",
 
-            applicationId    : 'com.lq.bastproject',
+            applicationId    : 'com.lq.bestproject',
             minSdkVersion    : 21,
             targetSdkVersion : 28,
 

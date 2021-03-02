@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title_bar"
+        layout="@layout/base_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:background="@drawable/bg_btn_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/base_dp_16"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/base_dp_44"
+                android:paddingLeft="@dimen/base_dp_12"
+                android:paddingRight="@dimen/base_dp_12"
+                android:text="功能介绍" />
+
+            <Button
+                android:background="@drawable/bg_btn_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/base_dp_16"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/base_dp_44"
+                android:paddingLeft="@dimen/base_dp_12"
+                android:paddingRight="@dimen/base_dp_12"
+                android:text="免责声明" />
+            <Button
+                android:background="@drawable/bg_btn_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/base_dp_16"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/base_dp_44"
+                android:paddingLeft="@dimen/base_dp_12"
+                android:paddingRight="@dimen/base_dp_12"
+                android:text="关于" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
